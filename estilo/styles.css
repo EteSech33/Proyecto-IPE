@@ -6,24 +6,10 @@ body {
 	margin: 0 0 0 0;
 }
 
-.uncab {
-	background-color: pink;
-	color: darkmagenta;
-	display: flex;
-	height: 5%;
-	width: auto;
-	margin: 0;
-	padding: 3% 3%;
-	text-align: center;
-	justify-content: center;
-}
-
 .cabezera{
 	background-color: darkcyan;
 	color: #ffffff;
 	display: flex;
-	height: auto;
-	width: auto;
 	margin: 0;
 	padding: 5% 5%;
 	flex-direction: column;
@@ -69,7 +55,7 @@ div.enlaces a:hover {
 }
 
 .bloque p {
-	color: blue;
+	color: brown;
 }
 
 .contenido	{
@@ -77,42 +63,38 @@ div.enlaces a:hover {
 	display: flex;
 	padding: 0;
 	margin: 0;
-	flex-direction: row;
-	justify-content: start;
-	width: auto;
+	flex-direction: column;
+	width: 500%;
 	padding: 2% 2%;
 	text-align: justify;
 }
 
 .imgtexto {
-	justify-content: center; 
-	/*flex:auto;
-	line-height: 36%;
-	padding: 1% 1%;
-	clear:both;
-	margin: 20%;*/
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: flex-start;
+    margin-top: 10px;
 }
 
 .imgtexto img {
-	display: flex;
-	height: 100%;
-	width: auto;
-	flex-direction: row;
+    height: 100px;
+    margin-right: 10px;
+    max-width: 100%
 }
 
 .imgtexto p {
-	display: flex;
-	margin: 0% 1%;
-	text-align: left;
-	text-align: justify;
+    margin: 0;
+    text-align: justify;
+    flex: 1;
 }
 /* FINAL DE BLOQUE DE INFORMACION */
 /* INCIO BLOQUE DE INFORMACION DE ALUMNO*/
 .sidebar {
+	display: flex;
+	flex-direction: column;
 	padding: 2% 2%;
 	background-color: burlywood;
 }
-
 
 .alumno {
 	display: flex;
@@ -168,8 +150,12 @@ div.enlaces a:hover {
 	}
 	.bloque {
 		justify-content: center; 
-		Margin: 0 auto; 
 		flex-direction: column;
 	}
-
+	.contenido	{
+	background-color: lightyellow;
+	width: auto;
+	padding: 2% 2%;
+	flex-direction: column;
+	}
 }
