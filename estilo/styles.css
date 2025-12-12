@@ -21,7 +21,7 @@ body {
 	background-color: darkcyan;
 	color: #ffffff;
 	display: flex;
-	height: 10%;
+	height: auto;
 	width: auto;
 	margin: 0;
 	padding: 5% 5%;
@@ -73,20 +73,21 @@ div.enlaces a:hover {
 	margin: 0;
 	flex-direction: column;
 	justify-content: start;
-	width: 500%;
+	width: auto;
 	padding: 2% 2%;
 	text-align: justify;
 }
 
 .imgtexto {
-	display: flex;
+	justify-content: center; 
+	Margin: 0 auto; 
 	line-height: 36px;
 	padding: 1% 1%;
 }
 
 .imgtexto img {
 	display: flex;
-	height: 100px;
+	height: 100%;
 	width: auto;
 	flex-direction: row;
 }
@@ -146,13 +147,15 @@ div.enlaces a:hover {
 
 @media (max-width: 600px){
 	div.enlaces {
-		flex-direction: column;
+		justify-content: center; 
+		Margin: 0 auto; 
 		padding:0;
 		justify-content: center;
 		align-items: center;
 	}
 	.bloque {
+		justify-content: center; 
+		Margin: 0 auto; 
 		flex-direction: column;
 	}
-	.bloque {
 }
