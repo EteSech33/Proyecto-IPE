@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica CSS</title>
+    <link rel="stylesheet" href="estilo/styles.css">
+</head>
+<body>
+    <h3 class="uncab">Si cambiamos el tamaño del navegador veremos el cambio de disposición de los elementos pues se trata de un diseño responsive</h3>
+    <div class="cabezera">
+<h2>HTML vs. XHTML</h2>
+<p>Gracias por <a class="ultimo">visitarnos</a></p>
+    </div>
+
+    <div class="enlaces">
+        <a href="https://es.wikipedia.org/wiki/XHTML" target="_blank">XHTML</a>
+        <a href="https://es.wikipedia.org/wiki/HTML5" target="_blank">HTML</a>
+        <a href="https://es.wikipedia.org/wiki/World_Wide_Web_Consortium" target="_blank">W3C</a>
+        <a href="https://es.wikipedia.org/wiki/Web_Hypertext_Application_Technology_Working_Group" target="_blank">WHATWG</a>
+    </div>
+    <div class="bloque">
+    <div class="contenido">
+    <h3>Contenido Principal</h3>
+    <div class="imgtexto">
+    <img src="fotos/html.png">
+    <p>
+    HTML y XHTML son las dos variantes que existen en el lenguaje HTML 5. Las diferencias entre esas dos variantes son básicamente sintácticas: la sintaxis HTML está inspirada en la norma SGML (aunque no la cumple estrictamente), mientras que la sintaxis XHTML está basada en la recomendación XML (aunque tampoco la cumple estrictamente).
+
+    En general, la sintaxis XHTML es más "estricta", en el sentido de imponer restricciones en la forma de escribir etiquetas, atributos o valores, mientras que la sintaxis HTML es más "flexible".
+
+    Si un documento contiene errores de sintaxis (HTML o XHTML) se dice que es un documento inválido. Si las páginas web se sirven al navegador como application/xhtml+xml, el navegador debe rechazar las páginas inválidas, pero si se sirven al navegador como text/html, los navegadores intentan mostrar el documento aunque contenga errores. Aunque los navegadores a menudo consiguen mostrar documentos inválidos, se aconseja validar y corregir los documentos para asegurar que los navegadores puedan mostrarlos correctamente.
+
+    En esta lección se comentan algunas de las diferencias entre las sintaxis HTML y XHTML. En casi todos los casos se puede escribir código válido para ambas sintaxis.
+    </p>
+    </div>
+    <h3>Generalidades</h3>
+
+        <p>
+        En XHTML para que un documento se muestre en el navegador tiene que ser "bien formado", es decir, tiene que cumplir todas las reglas sintácticas. En HTML, los documentos se muestran en el navegador aunque contengan errores sintácticos (la visualización puede ser correcta o incorrecta, dependiendo del tipo de errores de la página).
+        En XHTML no puede haber texto no incluido en alguna etiqueta, pero en HTML puede haberlo:
+
+        En XHTML, los nombres de elementos y atributos deben escribirse en minúsculas. En HTML no es necesario.
+
+        En XHTML, las referencias a entidades en hexadecimal deben escribirse en minúsculas. En HTML se pueden escribir en minúsculas o mayúsculas.
+        HTML correcto XHTML correcto.
+        </p>
+     
+    <h3>Elementos (etiquetas)</h3>
+        <div class="imgtexto">
+        <img src="fotos/etiqueta.png">
+        <p>
+        Los documentos XHTML tienen que tener un único elemento raíz de todo el documento, el elemento html. Los documentos HTML pueden no tenerlo.
+
+        En XHTML, los elementos no vacíos (los que tienen etiqueta de apertura) deben tener etiqueta de cierre. En HTML no es necesario.
+        En XHTML, la etiqueta de apertura de los elementos vacíos debe acabar en " />" o debe haber una etiqueta de cierre. En HTML no puede haber etiqueta de cierre.
+
+        Las etiquetas vacías (void) de HTML son area, base, br, col, embed, hr, img, input, link, meta, param, source, track y wbr.
+
+        El cierre de las etiquetas vacías en XHTML puede tener o no un espacio delante. En la recomendación XHTML 1.0 se recomendaba dejar un espacio delante por compatibilidad con algunos navegadores (por ejemplo, Netscape 4.8), pero seguramente hace años que esos navegadores han desaparecido del mercado.
+
+        El elemento pre no puede contener elementos img, object, big, small, sub o sup.
+        El elemento label no puede contener elementos label.
+        </div>
+        </p>
+    </div>
+    <div class="sidebar">
+<h3>Atributos</h3>
+    <p>
+    En XHTML, los atributos deben tener siempre valor (en el caso de atributos booleanos, el valor debe ser el propio nombre del atributo o una cadena vacía). En HTML, los atributos pueden no tener valor asignado.
+    HTML correcto XHTML correcto
+    En XHTML los valores de los atributos deben escribirse en minúsculas. En HTML se pueden escribir en minúsculas o mayúsculas.
+    HTML correcto XHTML correcto.
+    En XHTML, los valores de los atributos deben escribirse entre comillas (dobles o simples). En HTML no es necesario si no hay espacios en blanco. 
+    </p>
+<div class="alumno">
+    <div class="datos">    
+    <h3>Datos del alumno</h3>
+    <p>Me llamo xxxxx yyyyy.</p>
+
+    <p>Estudiante del IES Ciudad Jardín. 1º de ASIR.</p>
+
+    <p>Módulo: Lenguajes de marcas.</p>
+    </div>
+<div class="foto">
+    <p>Mi foto</p>
+    <img src="fotos/man.png">
+</div>
+</div>
+</div>
+    </div>
+    <div class="pie">
+<h4>Contenido tomado de mclibre y wikipedia.<h4>
+    </div>
+</body>
+</html>
