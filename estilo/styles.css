@@ -80,8 +80,7 @@ div.enlaces a:hover {
 
 .imgtexto {
 	display: flex;
-	height: 22%;
-	width: auto;
+	line-height: 36px;
 	padding: 1% 1%;
 }
 
