@@ -1,3 +1,4 @@
+/* COMIENZO DE CABEZERA */
 body {
 	background-color:#cccccc;
 	font-family: Arial, Helvetica, sans-serif;
@@ -33,6 +34,7 @@ body {
 	text-decoration: underline;
 }
 
+/* INICIO DE ENLACES */
 div.enlaces {
 	background-color: blue;
 	display: flex;
@@ -52,7 +54,11 @@ div.enlaces a:hover {
 	background-color: gray;
 	color: black;
 }
+/* FINAL DE ENLACES */
+/* FINAL DE CABECERA */
 
+/* INICIO DE CUERPO */
+/* INCIO DE BLOQUE DE INFORMACION */
 .bloque{
 	display: flex;
 	flex-direction: row;
@@ -63,7 +69,7 @@ div.enlaces a:hover {
 }
 
 .bloque p {
-	color: brown;
+	color: blue;
 }
 
 .contenido	{
@@ -71,7 +77,7 @@ div.enlaces a:hover {
 	display: flex;
 	padding: 0;
 	margin: 0;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: start;
 	width: auto;
 	padding: 2% 2%;
@@ -80,9 +86,11 @@ div.enlaces a:hover {
 
 .imgtexto {
 	justify-content: center; 
-	Margin: 0 auto; 
-	line-height: 36px;
+	/*flex:auto;
+	line-height: 36%;
 	padding: 1% 1%;
+	clear:both;
+	margin: 20%;*/
 }
 
 .imgtexto img {
@@ -98,7 +106,8 @@ div.enlaces a:hover {
 	text-align: left;
 	text-align: justify;
 }
-
+/* FINAL DE BLOQUE DE INFORMACION */
+/* INCIO BLOQUE DE INFORMACION DE ALUMNO*/
 .sidebar {
 	padding: 2% 2%;
 	background-color: burlywood;
@@ -130,8 +139,10 @@ div.enlaces a:hover {
 	align-items: start;
 	text-align: right;
 }
+/* FINAL BLOQUE DE INFORMACION DE ALUMNO*/
+/* FINAL DE CUERPO */
 
-
+/* INICIO DE PIE DE PAGINA*/
 .pie {
 	background-color: darkcyan;
 	color: #ffffff;
@@ -144,7 +155,9 @@ div.enlaces a:hover {
 	justify-content: center;
 	text-align: center;
 }
+/* FINAL DE PIE DE PAGINA*/
 
+/*AJUSTAR TAMAÑO POR LA ANCHURA DE LA PANTALLA*/
 @media (max-width: 600px){
 	div.enlaces {
 		justify-content: center; 
@@ -158,4 +171,5 @@ div.enlaces a:hover {
 		Margin: 0 auto; 
 		flex-direction: column;
 	}
+
 }
